@@ -8,6 +8,4 @@ const listar = () => {
     });
 }
 
-export default {
-    listar
-};
+export default listar;

@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Redirect, Route, Switch } from "react-router-dom";
+import { HashRouter as Router, Redirect, Route, Switch } from "react-router-dom";
 import jwt_decode from 'jwt-decode';
 import Login from "../paginas/conta/login";
 import Cadastrar from "../paginas/conta/cadastrar";
@@ -35,23 +35,26 @@ const RotaPrivadaAdmin = ({ component: Component, ...rest }) => (
   />
 );
 
-const Rotas = (
-  <Router>
-    <Switch>
-      <Route exact path='/' component={Home} />
-      <Route path='/login' component={Login} />
-      <Route path='/cadastrar' component={Cadastrar} />
-      <Route path='/resetar-senha' component={ResetarSenha} />
-      <Route path='/FAQ' component={FAQ} />
-      <RotaPrivada path='/consultas' component={Consultas} />
-      <RotaPrivada path='/perfil' component={Perfil} />
-      <RotaPrivada path='/chatbot' component={Chatbot} />
-      <RotaPrivada path='/laboratorios' component={Laboratorios} />
-      <RotaPrivadaAdmin path='/admin/consultas' component={AdminConsultas} />
-      <Route path='/sempermissao' component={SemPermissao} />
-      <Route component={NaoEncontrada} />
-    </Switch>
-  </Router>
-)
+const Rotas = () => {
+  return(
+    <Router>
+      <Switch>
+        <Route exact path='/' component={Home} />
+        <Route exact path='/login' component={Login} />
+        <Route exact path='/cadastrar' component={Cadastrar} />
+        <Route path='/resetar-senha' component={ResetarSenha} />
+        <Route path='/FAQ' component={FAQ} />
+        <RotaPrivada path='/consultas' component={Consultas} />
+        <RotaPrivada path='/perfil' component={Perfil} />
+        <RotaPrivada path='/chatbot' component={Chatbot} />
+        <RotaPrivada path='/laboratorios' component={Laboratorios} />
+        <RotaPrivadaAdmin path='/admin/consultas' component={AdminConsultas} />
+        <Route path='/sempermissao' component={SemPermissao} />
+        <Route component={NaoEncontrada} />
+      </Switch>
+    </Router>
+  )
+}
+
 
 export default Rotas;

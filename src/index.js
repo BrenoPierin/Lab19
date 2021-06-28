@@ -10,7 +10,7 @@ import Rotas from './utils/rotas';
 ReactDOM.render(
     <React.StrictMode>
         <ToastProvider>
-            {Rotas}
+            <Rotas/>
         </ToastProvider>
     </React.StrictMode>,
     document.getElementById('root')
