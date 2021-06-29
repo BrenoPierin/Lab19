@@ -1,4 +1,4 @@
-import { HashRouter as Router, Redirect, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Redirect, Route, Switch } from "react-router-dom";
 import jwt_decode from 'jwt-decode';
 import Login from "../paginas/conta/login";
 import Cadastrar from "../paginas/conta/cadastrar";

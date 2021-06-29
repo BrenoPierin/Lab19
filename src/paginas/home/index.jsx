@@ -123,11 +123,9 @@ const Home = () => {
                         <Card.Body>
                             <Card.Text>
                                 <strong>
-                                    Os dados inseridos em nossa plataforma, está totalmente seguro.
+                                    Os dados inseridos em nossa plataforma, estão totalmente seguros.
                                     A partir deles, podemos identificar o usuário e o visitante, 
-                                    além de garantir uma maior segurança e bem-estar às suas necessidade. 
-                                    Ficam cientes os usuários e visitantes de que seu perfil na plataforma
-                                    não estará acessível a todos demais usuários e visitantes da plataforma Lab19.
+                                    além de garantir uma maior segurança e bem-estar às suas necessidades. 
                                 </strong>
                             </Card.Text>
                         </Card.Body>
